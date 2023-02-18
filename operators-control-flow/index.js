@@ -7,3 +7,6 @@ let Bolatito = class_group;
 let class_group = Arts_subjects;
 
 
+if (class_group === Social_subjects){
+    console.log(Science_subjects);
+}
