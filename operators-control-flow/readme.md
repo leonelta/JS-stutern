@@ -20,8 +20,22 @@
 //Question 2
 
 2.1 arithmetric xamples
-   console.log(3+2)
-   console.log(4*4)
-   console.log(5/2)
-   console.log(5/2)
+   console.log(3 + 2)
+   console.log(4 * 4)
+   console.log(5 / 2)
+   console.log(5 - 2)
+
+2.2 Assignment operators example
+    var Age = 56
+
+2.3 Comparison Operator examples
+    console.log(3 < 2)
+    console.log(3 <= 2)
+    console.log(3 === 2)
+    console.log(3 !== 2)
+
+2.4  Logical Operator examples
+
+       console.log(true && false)
+       console.log(true || false)
 
