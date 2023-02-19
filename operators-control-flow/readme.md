@@ -43,3 +43,12 @@
 2.5 Bitwise oprators
      5&1
      2 >> 3
+
+//Question 4
+
+   the result of the code
+   for (let i = 1; i < 20; i += 7) {
+    console.log(i);
+}
+
+ are 1, 8, 15

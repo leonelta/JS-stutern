@@ -24,3 +24,6 @@ else if(class_group === Arts_subjects){
 else{
     console.log(General_subjects);
 }
+
+//example
+
