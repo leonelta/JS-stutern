@@ -15,7 +15,7 @@
      there is && and ||. && is for AND and || is for OR.
 
 1.5 Bitwise Operator
-
+    there are &, |, <<, >>
 
 //Question 2
 
@@ -27,6 +27,7 @@
 
 2.2 Assignment operators example
     var Age = 56
+    age += Age
 
 2.3 Comparison Operator examples
     console.log(3 < 2)
@@ -39,3 +40,6 @@
        console.log(true && false)
        console.log(true || false)
 
+2.5 Bitwise oprators
+     5&1
+     2 >> 3
