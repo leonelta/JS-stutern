@@ -26,7 +26,7 @@ const secondPost = new InstagramPost("betterhelp", "Many of us spend almost all 
 console.log('handler is ' + firstPost.handle + 'whose content is' + firstPost.content
 + 'one can get to the post throught this link' + firstPost.imagelink + 'has' + firstPost.likes + 'likes');
 
-console.log('handler is ' + secondPost.handle + 'whose content is' + secondPost.content
+console.log('handler is ' + secondPost.handle + ' whose content is ' + secondPost.content
 + 'one can get to the post throught this link' + secondPost.imagelink + 'has' + secondPost.likes + 'likes');
 
 //quetsion 3
@@ -39,7 +39,7 @@ function createPerson(name, age, location){
         age: age,
         location: location,
         showInfo() {
-            return this.name + 'is' + this.age + 'years old and lives in' +
+            return this.name + 'is ' + this.age + 'years old and lives in ' +
             this.location;
         }
     }
@@ -57,8 +57,8 @@ function createJambScores(eng, govt, lit, crk){
         govt: govt, 
         crk: crk,
         showInfo() {
-            return 'Musa had' + this.eng + 'in ENG,' + this.govt + 'in GOVT,' +
-            this.lit + 'in Lit and' + this.crk + 'in CRK';
+            return 'Musa had ' + this.eng + 'in ENG, ' + this.govt + 'in GOVT, ' +
+            this.lit + 'in Lit and ' + this.crk + 'in CRK ';
         }
     }
 }
@@ -67,3 +67,21 @@ let Musa_Jamb_scores= createJambScores(70, 85, 82, 94);
 console.log(Musa_Jamb_scores.showInfo());
 
 //4. What are the different ways you can clone an object? Give examples for each of them.
+const userDetails = {
+    name: "John",
+    age: 14,
+};
+//Spread method
+//let clone = { ...userDetails };
+
+//Object.assign method
+//let clone = Object.assign({}, userDetails);
+
+//JSON.parse() method
+//let clone = JSON.parse(JSON.stringify(userDetails));
+
+//shallowclone
+//let shallowClone = { ...userDetails};
+
+//deepclone
+//let deepClone = JSON.parse(JSON.stringify(userDetails));
