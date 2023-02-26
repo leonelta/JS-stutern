@@ -85,3 +85,19 @@ const userDetails = {
 
 //deepclone
 //let deepClone = JSON.parse(JSON.stringify(userDetails));
+
+//
+//5. Using any of the enumeration methods taught in class (for…in  or for..of), log out each of the presidential candidates in this format:
+//’Omoyele Sowore is the presidential candidate of AAC’
+
+const presidentailCandidates = {
+    AAC: 'Omoyele Sowore',
+    ACCORD: 'Christopher Imumolen',
+    APC: 'Bola Ahmed Tinubu',
+    LP: 'Peter Obi',
+    NNPP: 'Rabiu Kwankwaso',
+    PDP: 'Atiku Abubakar',
+};
+for (const prop in presidentailCandidates) {
+    console.log(`${presidentailCandidates[prop]} is the presidentail candidate of ${prop}`);
+}
