@@ -13,5 +13,11 @@
 const languages =  ["c#", "Javascript", "Ruby", "PHP", "Python"];
 //insert an element at the end of the array
 languages.push("Kotlin");
+console.log(languages);
 // add an element after Ruby
 languages.splice(3, 0, 'Java');
+console.log(languages);
+// remove the first element of the array
+languages.shift();
+console.log(languages);
+
