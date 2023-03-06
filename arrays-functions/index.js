@@ -23,5 +23,8 @@ console.log(languages);
 // adding two elements at the beginning of the array
 languages.unshift("Scala", "Swift");
 console.log(languages);
+// replacing an item of the array
+languages.splice(3, 1, 'Go', 'Rust');
+console.log(languages);
 
 
