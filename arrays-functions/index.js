@@ -20,4 +20,8 @@ console.log(languages);
 // remove the first element of the array
 languages.shift();
 console.log(languages);
+// adding two elements at the beginning of the array
+languages.unshift("Scala", "Swift");
+console.log(languages);
+
 
