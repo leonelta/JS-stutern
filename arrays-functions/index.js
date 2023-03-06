@@ -24,7 +24,28 @@ console.log(languages);
 languages.unshift("Scala", "Swift");
 console.log(languages);
 // replacing an item of the array
-languages.splice(3, 1, 'Go', 'Rust');
+languages.splice(5, 1, 'Go', 'Rust');
 console.log(languages);
+
+//Question 3
+let fruit = ['apple', 'mango', 'banana'];
+function changeFruit( fruit ) {
+    fruit[2] = "orange";
+    return fruit;  
+}
+
+// answer = nothing
+
+//Question 4
+function maximum(arr) {
+    let i;
+
+    let max = arr[0];
+
+    for (i = 1; gt)
+    
+}
+
+
 
 
