@@ -66,7 +66,7 @@ h4{
     color: #313154;
     background-color: #fff;
     border-radius: 0.5rem;
-    box-shadow: 0 1px 3px rgb(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     margin-bottom: 1.5rem;
 }
 
@@ -82,7 +82,7 @@ input[type="checkbox"]{
     height: 20px;
     border-radius: 50%;
     border: 2px solid #3a82ee;
-    box-shadow: 0 0 4px rgb(58, 130, 238, 0.7);
+    box-shadow: 0 0 4px rgba(58, 130, 238, 0.7);
 }
 
 .done::after{
@@ -92,7 +92,30 @@ input[type="checkbox"]{
     width: 0px;
     height: 0px;
     border-radius: 50%;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
     background-color: rgb(58, 130, 238);
-    box-shadow: 0 0 4px rgb(58, 130, 238, 0.7);
+    box-shadow: 0 0 4px rgba(58, 130, 238, 0.7);
+}
+
+input:checked ~ .done::after{
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.list input[type="submit"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: #ea40a4;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 4px rgba(234, 64, 164, 0.7);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.list input[type="submit"]:hover{
+    opacity: 0.8;
 }
