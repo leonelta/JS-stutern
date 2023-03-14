@@ -84,3 +84,15 @@ input[type="checkbox"]{
     border: 2px solid #3a82ee;
     box-shadow: 0 0 4px rgb(58, 130, 238, 0.7);
 }
+
+.done::after{
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    background-color: rgb(58, 130, 238);
+    box-shadow: 0 0 4px rgb(58, 130, 238, 0.7);
+}
