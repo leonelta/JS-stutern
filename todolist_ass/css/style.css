@@ -14,10 +14,27 @@ input[type="text"], button{
 }
 
 body{
-    background: rgb(230, 230, 230);
-    color: rgb(29, 28, 28);
+    background: #eee;
+    color: #313154;
 }
 
 section{
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3{
+    color: #313154;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+h4{
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
