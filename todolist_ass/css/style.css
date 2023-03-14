@@ -5,7 +5,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-input[type="text"], button{
+input[type="text"],
+input[type="submit"],
+button{
     appearance: none;
     border: none;
     outline: none;
@@ -25,7 +27,7 @@ section{
     padding-right: 1.5rem;
 }
 
-h3{
+h3,h2{
     color: #313154;
     font-size: 1rem;
     font-weight: 400;
@@ -37,4 +39,37 @@ h4{
     font-size: 0.8rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+.welcome .title{
+    display: flex;
+}
+
+.welcome .title input{
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.welcome .title,
+.welcome .title input{
+    color: #313154;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.list input[type="text"]{
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.3rem;
+    color: #313154;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: rgba(49, 49, 84, 0.7);
+    margin-bottom: 1.5rem;
+}
+
+input[type="checkbox"]{
+    display: none;
 }
