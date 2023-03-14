@@ -42,10 +42,25 @@ function maximum(arr) {
 
     let max = arr[0];
 
-    for (i = 1; gt)
+    for (i = 1; i < i < arr.length; i++){
+        if (arr[i] > max )
+            max = arr[i];
+    }
     
+    return max;
 }
 
+let arr = [-2, 10, 8];
+console.log(maximum(arr));
 
 
+//Question 5
+//Write a function called valTimesIndex which accepts an array of numbers and returns a new array 
+//with each value multiplied by the index it is at in the array
 
+function valTimesIndex(arr){
+    return arr.map(function(value,index,array){
+      return value*index;
+  });   
+}
+    
