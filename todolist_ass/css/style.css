@@ -119,3 +119,17 @@ input:checked ~ .done::after{
 .list input[type="submit"]:hover{
     opacity: 0.8;
 }
+
+.todolist .tolist{
+    margin: 1rem 0;
+}
+
+.todolist .todoitem{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgb(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
