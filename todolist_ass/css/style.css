@@ -12,3 +12,12 @@ input[type="text"], button{
     background: none;
     cursor: initial;
 }
+
+body{
+    background: rgb(230, 230, 230);
+    color: rgb(29, 28, 28);
+}
+
+section{
+    margin-top: 2rem;
+}
