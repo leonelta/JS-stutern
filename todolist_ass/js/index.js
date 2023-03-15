@@ -52,7 +52,7 @@ function DisplayTodos () {
 
         input.type = 'checkbox';
         input.checked = todo.done;
-        span.classList.add('donefirst');
+        span.classList.add('done');
 
         content.classList.add('todocontent');
         actions.classList.add('actions');
@@ -88,6 +88,24 @@ function DisplayTodos () {
                 todoItem.classList.remove('done');
             }
 
+            DisplayTodos();
+        })
+
+        edit.addEventListener('click', encodeURI => {
+            const input = content.querySelector('input');
+            input.removeAttribute('readonly');
+            input.focus();
+            input.addEventListener('blur', encodeURI => {
+                input.setAttribute('readonly', true);
+                todo.content = encodeURI.target.value;
+                localStorage.setItem('todos', JSON.stringify(todos));
+                DisplayTodos();
+            })
+        })
+
+        deleteButton.addEventListener('click', encodeURI => {
+            todos = todos.filter(t => t != todo);
+            localStorage.setItem('todos', JSON.stringify(todos));
             DisplayTodos();
         })
     })
