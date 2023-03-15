@@ -21,8 +21,10 @@ window.addEventListener('load', () => {
             createdAt: new Date().getTime()
         }
 
-        todos.push(push);
+        todos.push(todo);
         localStorage.setItem('todos', JSON.stringify(todos));
+
+        encodeURI.target.reset();
     })
 
 
