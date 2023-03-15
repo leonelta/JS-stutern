@@ -25,8 +25,20 @@ window.addEventListener('load', () => {
         localStorage.setItem('todos', JSON.stringify(todos));
 
         encodeURI.target.reset();
+
+        DisplayTodos();
     })
 
-
+    DisplayTodos();
     
 })
+
+function DisplayTodos () {
+    const todolist = document.querySelector('#todolist')
+
+    todolist.innerHTML = '';
+
+    todos.forEach(todo => {
+        
+    })
+}
