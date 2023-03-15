@@ -16,8 +16,12 @@ window.addEventListener('load', () => {
         encodeURI.preventDefault();
 
         const todo = {
-            content: encodeURI.target.elements.content.value;
+            content: encodeURI.target.elements.content.value,
+            done: false,
+            createdAt: new Date().getTime()
         }
+
+        todos.push(push);
     })
 
 
